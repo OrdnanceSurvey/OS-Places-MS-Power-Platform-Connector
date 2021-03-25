@@ -48,13 +48,13 @@ You'll notice that once entered, an **error notification** will pop up over your
 
 Note that this formula is for a free text address search using the **OSPlaces.Find** resource. For other **OS Places API** resources, the following formulas can be entered instead:
 
-**Postcode search**
+* **Postcode search**
 *Set (SearchResults, OSPlaces.Postcode ('SearchBar'.Text).results)*
 
-**UPRN search**
+* **UPRN search**
 *Set (SearchResults, OSPlaces.UPRN ('SearchBar'.Text).results)*
 
-**Nearest address to a set of Coordinates search**
+* **Nearest address to a set of Coordinates search**
 *Set (SearchResults, OSPlaces.Nearest ('SearchBar'.Text).results)*
 
 For more information on how these resources work and the required inputs, please go to **LINK**.
