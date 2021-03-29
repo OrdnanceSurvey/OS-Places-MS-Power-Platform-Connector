@@ -5,7 +5,9 @@ A guide to connecting to and querying OS Places API in Microsoft's Power Apps.
 
 ### Connecting to OS Places API
 
-From the **Power Apps** homescreen, navigate to **Data > Connections > New Connections**, and either search for or scroll to **OS Places API**. 
+From the **Power Apps** homescreen, navigate to **Data > Connections > New Connections**, and either search for or scroll to **OS Places API**.
+
+![image](https://github.com/OrdnanceSurvey/OS-Places-MS-Power-Platform-Connector/blob/main/PA%20Guide%20-%20New%20Connection.png)
 
 Select the connector and enter your **API key**. For more information on the API and accessing a key, please go to **LINK**.
 
@@ -16,12 +18,16 @@ Click **Create**. Your new connection will now appear under yout list of active 
 
 In the **Power Apps** homescreen, navigate to **Create** and select a new **Canvas app from blank**.
 
+![image](https://github.com/OrdnanceSurvey/OS-Places-MS-Power-Platform-Connector/blob/main/PA%20Guide%20-%20New%20App.png)
+
 Name your app, and select either **Tablet or Phone** layout as per your need. Click **Create**.
 
 
 ### Adding Data to the app
 
 In the **Power Apps studio** for your newly created app, navigate to the **Data** tab in the toolbar on the left side.
+
+![image](https://github.com/OrdnanceSurvey/OS-Places-MS-Power-Platform-Connector/blob/main/PA%20Guide%20-%20Add%20Data.png)
 
 Click **Add data**, navigate to **Connectors** and select **OS Places API**. The connection you created earlier will be visible here, and can be selected as a data source.
 
@@ -30,17 +36,17 @@ Click **Add data**, navigate to **Connectors** and select **OS Places API**. The
 
 Rename **Screen1** to **AddressSearch** from the Tree view on the left side.
 
+![image](https://github.com/OrdnanceSurvey/OS-Places-MS-Power-Platform-Connector/blob/main/PA%20Guide%20-%20Rename%20Screen.png)
+
 Insert a **Text input control** from the **Insert** Tab **> Text > Text input** and rename the control from **TextInput1** to **SearchBar**.
-
-Clear the **Default** value, ensure the **Format** is **Text**, and change the **HintText** to **“Enter Address Search Here”**.
-
-For additional functionality, toggle the **Clear** button and **Enable spell check** parameters to on to allow for faster clearing of search queries and spell checking.
 
 Insert a **Button** input control from the **Insert** Tab and rename the control from **Button1** to **SearchButton**.
 
-Change **Text** to **"Search"** and ensure **Display mode** is set to **edit**.
+In the properties pane for **SearchBar** (appears on the right side), clear the **Default** value, ensure the **Format** is **Text**, and change the **HintText** to **“Enter Address Search Here”**.
 
-In the **advanced** settings for your **SearchButton**, clear the **OnSelect** property and enter the following formula:
+For additional functionality, toggle the **Clear** button and **Enable spell check** parameters to on to allow for faster clearing of search queries and spell checking.
+
+In the properties pane for **SearchButton**, change **Text** to **"Search"** and ensure **Display mode** is set to **edit**. In the **advanced** settings, clear the **OnSelect** property and enter the following formula:
 
 *Set (SearchResults, OSPlaces.Find ('SearchBar'.Text).results)*
 
