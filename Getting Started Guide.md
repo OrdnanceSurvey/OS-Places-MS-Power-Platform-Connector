@@ -9,7 +9,7 @@ From the **Power Apps** homescreen, navigate to **Data > Connections > New Conne
 
 ![image](https://user-images.githubusercontent.com/81246539/112963255-1965c800-913f-11eb-8d61-cc05ce7178c1.png)
 
-Select the connector and enter your **API key**. For more information on the API and accessing a key, please go to **LINK**.
+Select the connector and enter your **API key**.
 
 Click **Create**. Your new connection will now appear under yout list of active connections.
 
@@ -72,9 +72,6 @@ Note that this formula is for a free text address search using the **OSPlaces.Fi
 
 * **Nearest address to a set of Coordinates search**
 *Set (SearchResults, OSPlaces.Nearest ('SearchBar'.Text).results)*
-
-For more information on how these resources work and the required inputs, please go to **LINK**.
-
 
 ### Creating a search results gallery
 
