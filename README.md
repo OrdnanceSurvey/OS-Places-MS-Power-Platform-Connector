@@ -27,7 +27,8 @@ Name your app, and select either **Tablet or Phone** layout as per your need. Cl
 
 In the **Power Apps studio** for your newly created app, navigate to the **Data** tab in the toolbar on the left side.
 
-![image](https://user-images.githubusercontent.com/81246539/112963004-dc99d100-913e-11eb-8fc3-ae0fab7aa6bd.png)
+![image](https://user-images.githubusercontent.com/44440827/118996288-b0047780-b97f-11eb-80ce-c4da15200847.png)
+
 
 Click **Add data**, navigate to **Connectors** and select **OS Places API**. The connection you created earlier will be visible here, and can be selected as a data source.
 
