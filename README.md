@@ -1,7 +1,8 @@
 # Getting Started Guide
 
-A guide to connecting to and querying OS Places API in Microsoft's Power Apps.
+Ordnance Survey Places provides the latest details of over 40 million addresses across the UK connecting the existing OS Places API service to your app.
 
+A guide to connecting to and querying OS Places API in Microsoft's Power Apps.
 
 ### Connecting to OS Places API
 
