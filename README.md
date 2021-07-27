@@ -58,7 +58,7 @@ In the properties pane for **SearchButton**, change **Text** to **"Search"** and
 
 In the **advanced** settings, clear the **OnSelect** property and enter the following formula:
 
-*Set (SearchResults, OSPlaces.Find ('SearchBar'.Text).results)*
+*Set (SearchResults, OrdnanceSurveyPlaces.Find ('SearchBar'.Text).results)*
 
 ![image](https://user-images.githubusercontent.com/81246539/112963486-56ca5580-913f-11eb-9ed5-363faf690d81.png)
 
@@ -67,13 +67,13 @@ You'll notice that once entered, an **error notification** will pop up over your
 Note that this formula is for a free text address search using the **OSPlaces.Find** resource. For other **OS Places API** resources, the following formulas can be entered instead:
 
 * **Postcode search**
-*Set (SearchResults, OSPlaces.Postcode ('SearchBar'.Text).results)*
+*Set (SearchResults, OrdnanceSurveyPlaces.Postcode ('SearchBar'.Text).results)*
 
 * **UPRN search**
-*Set (SearchResults, OSPlaces.UPRN ('SearchBar'.Text).results)*
+*Set (SearchResults, OrdnanceSurveyPlaces.UPRN ('SearchBar'.Text).results)*
 
 * **Nearest address to a set of Coordinates search**
-*Set (SearchResults, OSPlaces.Nearest ('SearchBar'.Text).results)*
+*Set (SearchResults, OrdnanceSurveyPlaces.Nearest ('SearchBar'.Text).results)*
 
 ### Creating a search results gallery
 
